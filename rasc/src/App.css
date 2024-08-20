@@ -1,0 +1,243 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(206, 158, 76);
+  /* Fondo de toda la aplicación */
+}
+
+.App-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.App-header .header-content {
+  flex: 1;
+  text-align: center;
+}
+
+.olympics-logo {
+  width: 100px;
+  height: 100px;
+  /* Altura igual a la anchura para que sea redondo */
+  border-radius: 50%;
+  /* Hacer el logo redondo */
+  position: absolute;
+  left: 20px;
+  /* Ajustar según sea necesario */
+}
+
+.nav-menu {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #ddd;
+  /* Borde inferior de la barra de navegación */
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+  line-height: 40px;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 600px;
+  /* Ajusta el tamaño máximo según sea necesario */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  /* Centra la imagen y agrega margen superior e inferior */
+  border-radius: 8px;
+  /* Opcional: agrega bordes redondeados si lo deseas */
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-images img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.carousel-control {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.lebron {
+  background-color: rgb(206, 158, 76);
+  /* Color de fondo para la sección de LeBron James */
+  border: 2px solid #000;
+  /* Borde negro */
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  /* Centrar el texto */
+}
+
+.lebron ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lebron li {
+  margin: 5px 0;
+}
+
+.olympic-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  max-width: 150px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.grid-item p {
+  margin: 10px 0;
+}
+
+.medal-table {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.table-container {
+  border: 2px solid #000;
+  /* Borde negro */
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgb(206, 158, 76);
+  /* Fondo de la tabla */
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #000;
+  /* Línea divisoria en la parte inferior de cada celda */
+}
+
+th {
+  background-color: #333;
+  /* Color de fondo de los encabezados de tabla */
+  color: #fff;
+  /* Color de texto de los encabezados */
+}
+
+tr:nth-child(even) {
+  background-color: rgb(206, 158, 76);
+  /* Color de las filas */
+  color: #fff;
+  /* Color de texto para filas */
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(206, 158, 76);
+  /* Color de las filas */
+  color: #fff;
+  /* Color de texto para filas */
+}
+
+.flag-icon {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.games-summary {
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgb(206, 158, 76);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  border: 2px solid #000;
+  /* Borde negro */
+}
+
+.games-summary h2 {
+  margin-bottom: 10px;
+}
+
+.games-summary p {
+  line-height: 1.6;
+}
